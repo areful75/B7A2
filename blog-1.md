@@ -1,13 +1,13 @@
 The Four Pillars of OOP in TypeScript: Managing Logic and Reducing Complexity 
 
-Introduction 
+## Introduction 
 TypeScript projects can get complex fast. When many developers work on many features, code that can be difficult to read, update, and debug. Object-Oriented Programming or OOP helps us organise code  There are four main pillars of OOP:  
 Inheritance  
 Polymorphism  
 Abstraction  
 Encapsulation  
 These ideas help us reuse code, keep data safe, hide complexity, and write cleaner code. 
-1.Encapsulation: Protecting Data 
+1. Encapsulation: Protecting Data 
 Encapsulation is to protect the data in a class. We decide which data is accessible from outside and which data should be private. 
 ```ts
 class BankAccount { 
@@ -36,7 +36,7 @@ mezbaBhaiAccount.callHiddenMethod(100);
 ```
 Here, userId is readonly, so it cannot be changed. _userBalance is private, so it cannot be accessed directly from outside the class. 
 This helps protect important data from unwanted changes. 
-2.Inheritance: Reusing Common Logic 
+2. Inheritance: Reusing Common Logic 
 Inheritance allows a class to inherit properties and methods from another class. 
 ```ts
 class Person { 
@@ -120,7 +120,7 @@ mezbaPlayer1.stop();
 Here, MediaPlayer specifies the functionality of every media player. But it does not say how it will do that. 
 The real logic is written inside MezbaPlayer. 
 This keeps our project structure tidy. 
-4.Polymorphism: Same Method, Different Behavior 
+4. Polymorphism: Same Method, Different Behavior 
 Polymorphism means one method can behave differently in different classes. 
 ```ts
 class Person { 
@@ -198,7 +198,8 @@ getArea(shape2);
 getArea(shape3); 
 ```
 Here, every shape has getArea(), but each shape calculates area in its own way. 
-Conclusion 
+
+## Conclusion 
 The four pillars of OOP make TypeScript projects cleaner and easier to manage. 
 Encapsulation protects data. 
 Inheritance removes duplicate code. 
